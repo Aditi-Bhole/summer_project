@@ -1,0 +1,138 @@
+header{
+	display: inline-block;
+	padding: 1%;
+	background-color: #195074;
+	width: 100%;
+	position: relative;
+	border-right: 0 ;
+}
+button{
+	background-color: #22acb0;
+	margin: 4px 2px;
+	padding: 15px 32px;
+	color: white;
+	display: inline-block;
+	font-size:20px;
+	text-align:center;
+	text-decoration: none; 
+	border: none;
+	cursor:pointer;
+	transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+  /*
+button:hover{
+	opacity: 0.8;
+	background-color: #999999;
+}*/
+
+.container{
+	position: relative;
+  	width: 100%;  	
+}
+.container img{
+	
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: auto;
+    background-attachment: fixed;
+    width: 100%;
+ 	height: auto;
+  	
+}
+
+.container .btn{
+	 position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #00802b/*#519e79*/;
+  color: white;
+  font-size: 60px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+
+.container .btn:hover {
+  background-color: #ffc266;
+}
+
+
+
+.text-block {
+  position: absolute;
+  bottom: 0%;
+  left:0%;
+  top: 0%;
+  
+  
+  padding-left: 60px;
+  padding-right: 30px;
+  /*background-image: url('img.jpg');
+  color: white;
+  background-color: #817d71;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+h1 {
+	color: #7ea078;
+  text-shadow: 2px 2px #ffad9e;
+  font-stretch: ultra-expanded;
+  font-style: oblique;
+  font-variant-caps: petite-caps;
+  font-weight: 500;
+  font-size: 550%;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 5%;
+
+}
+
+
+footer{
+	display: inline-block;
+	padding: 1%;
+	background-color: #195074;
+	width: 100%;
+	position: relative; 
+	margin:0;
+  
+}
+
+
+
+
+
+
