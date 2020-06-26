@@ -12,11 +12,19 @@
 </head>
 <body>
 	<header>
-		<button class="btn"><i class="fa fa-home"></i> <span> Home </span></button>
-		<button class="btn"><i class="fa fa-phone"></i> <span> Contact </span></button>
-        <button class="btn"><i class="fa fa-language"></i> <span> Translate </span></button>
-        <button class="btn" onclick="document.location='reme'"><i class='fas fa-mortar-pestle'></i> <span> Remedies </span></button>
-
+		<button class="btn" onclick="document.location='index'"><i class="fa fa-home"></i> <span> Home </span></button>
+        	<button class="btn" onclick="document.location='contact'"><i class="fa fa-phone"></i> <span> Contact </span></button>
+        	<button class="btn" onclick="document.location='remedies'"><i class='fas fa-mortar-pestle'></i> <span> Remedies </span></button>
+        	<button class="btn" id="google_translate_element"><i class="fa fa-language"></i> <span> Translate </span></button>
+        	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        	<script type="text/javascript">
+            		function googleTranslateElementInit() {
+                		new google.translate.TranslateElement({
+				    pageLanguage: 'en',
+				    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+				}, 'google_translate_element');
+			    }
+        	</script>
 		<!--<button class="btn" style="vertical-align:middle"><span>Home</span></button>
 		<button class="btn" style="vertical-align:middle"><span>Sign In </span></button>
 		<button class="btn" style="vertical-align:middle"><span>Log In </span></button>	
@@ -36,7 +44,8 @@
 	</main>
 	<footer>
 		<button class="btn" style="vertical-align:middle"><span>About Us </span></button>
-		<p>We believe in empowering people to improve their lives..! </p>
+		<p><p>Early diabetes diagnosis plays a crucial role in diabetic control,and can prevent further medical complications.Our website can predict diabetes at the early stages in a time efficient manner by taking inputs from the user which are the symptoms and calculate the probabilities of having diabetes.
+    Our system also predicts among the various types of diabetes like Type 1,Type2,Prediabetes and Gestational diabetes.After taking the test,we also recommend to bring some changes in </p>
 	</footer>
 </body>
 </html>
