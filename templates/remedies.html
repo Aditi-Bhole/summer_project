@@ -12,11 +12,19 @@
 </head>
 <body>
 	<header>
-		<button class="btn" onclick="document.location='/'"><i class="fa fa-home"></i> <span> Home </span></button>
-		<button class="btn"><i class="fa fa-phone"></i> <span> Contact </span></button>
-        <button class="btn"><i class="fa fa-language"></i> <span> Translate </span></button>
-        <button class="btn"><i class='fas fa-mortar-pestle'></i> <span> Remedies </span></button>
-
+		<button class="btn" onclick="document.location='index'"><i class="fa fa-home"></i> <span> Home </span></button>
+		<button class="btn" onclick="document.location='contact'"><i class="fa fa-phone"></i> <span> Contact </span></button>
+		<button class="btn" onclick="document.location='remedies'"><i class='fas fa-mortar-pestle'></i> <span> Remedies </span></button>
+		<button class="btn" id="google_translate_element"><i class="fa fa-language"></i> <span> Translate </span></button>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script type="text/javascript">
+		    function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+			    pageLanguage: 'en',
+			    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+			}, 'google_translate_element');
+		    }
+		</script>
     </header>
 	<main>
 		<div class="container-fluid">
@@ -82,9 +90,9 @@
 								
 		</div>
 			</main>
-	<footer>
+<!-- 	<footer>
 		<button class="btn" style="vertical-align:middle"><span>About Us </span></button>
 		<p>We believe in empowering people to improve their lives..! </p>
-	</footer>
+	</footer> -->
 </body>
 </html>
